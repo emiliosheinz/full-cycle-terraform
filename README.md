@@ -1,2 +1,3 @@
-# full-cycle-terraform
-🔄 Code and notes produced throughout the Terraform module of the Full Cycle course
+# Terraform
+
+[Terraform](https://www.terraform.io/) is an open-source infrastructure as code software tool created by [HashiCorp](https://www.hashicorp.com/) that enables users to define and provision data center infrastructure using a declarative configuration language. With Terraform, users can describe the desired state of their infrastructure in configuration files, specifying resources such as virtual machines, networks, and storage, and then Terraform automates the process of creating, updating, and managing these resources across various cloud providers and on-premises environments. This approach allows for consistent and repeatable infrastructure deployments, simplifying the management of complex systems and facilitating infrastructure automation.
