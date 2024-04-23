@@ -11,3 +11,9 @@ Terraform does this by maintaining a state file that tracks the current state of
 ## Terraform vs Ansible
 
 While Terraform and [Ansible](https://www.ansible.com/) are both popular tools for automating infrastructure management, they serve different purposes and are often used together in complementary ways. Terraform is primarily focused on defining and provisioning infrastructure resources, such as virtual machines, networks, and storage, using a declarative configuration language. In contrast, Ansible is a configuration management tool that is designed to automate the installation and configuration of software on existing servers.
+
+## Providers
+
+Providers are a logical abstraction of an upstream API. They are responsible for understanding API interactions and exposing resources. The available providers can be found on https://registry.terraform.io/browse/providers. Some of them are created by Hashicorp and others by the community and partners.
+
+![Providers](./docs/images/providers.png)
