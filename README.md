@@ -29,3 +29,14 @@ The HashiCorp Configuration Language (HCL) is a configuration language authored 
 - `terraform init`: Prepare your working directory for other commands
 - `terraform plan`: Show changes required by the current configuration
 - `terraform apply`: Create or update infrastructure
+
+## Variables
+
+Variables can be created using the `variable` keyword, and within the module that declared it, its value can be accessed from within expressions as `var.<NAME>`, where `<NAME>` matches the label given in the declaration block.
+
+Variables can be set through several different ways:
+
+- In a Terraform workspace
+- Using the the `-var` option on the CLI
+- In `.tfvars` files, either specified on the CLI or automatically loaded.
+- As environment variables
