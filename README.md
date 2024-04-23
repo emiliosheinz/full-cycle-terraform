@@ -17,3 +17,15 @@ While Terraform and [Ansible](https://www.ansible.com/) are both popular tools f
 Providers are a logical abstraction of an upstream API. They are responsible for understanding API interactions and exposing resources. The available providers can be found on https://registry.terraform.io/browse/providers. Some of them are created by Hashicorp and others by the community and partners.
 
 ![Providers](./docs/images/providers.png)
+
+## Hashicorp Configuration Language (HCL)
+
+The HashiCorp Configuration Language (HCL) is a configuration language authored by HashiCorp. Although intended to be generally useful, it is primarily targeted towards devops tools, servers, etc. HCL provides a set of constructs that can be used by a calling application to construct a configuration language. The application defines which attribute names and nested block types are expected, and HCL parses the configuration file, verifies that it conforms to the expected structure, and returns high-level objects that the application can use for further processing.
+
+💡 More information about it can be found on https://github.com/hashicorp/hcl
+
+## Basic commands
+
+- `terraform init`: Prepare your working directory for other commands
+- `terraform plan`: Show changes required by the current configuration
+- `terraform apply`: Create or update infrastructure
