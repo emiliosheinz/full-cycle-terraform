@@ -51,4 +51,18 @@ output "instance_ip_addr" {
 }
 ```
 
-If you want to go deeper into the outputs concept you can refer to https://developer.hashicorp.com/terraform/language/values/outputs
+If you want to learn more about outputs you can refer to https://developer.hashicorp.com/terraform/language/values/outputs
+
+## Data Sources
+
+Data sources allow Terraform to use information defined outside of Terraform, defined by another separate Terraform configuration, or modified by functions. It basically functions as a bridge between Terraform configurations and existing resources outside of Terraform's control, allowing Terraform to make informed decisions or establish relationships between resources.
+
+Data sources can be defined using the `data` keyword.
+
+```tf
+data "local_file" "example_content" {
+  filename = "example.txt"
+}
+```
+
+If you want to learn more about data sources you can refer to https://developer.hashicorp.com/terraform/language/data-sources

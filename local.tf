@@ -7,6 +7,10 @@ resource "local_file" "example" {
   content = var.file_content
 }
 
+data "local_file" "example_content" {
+  filename = "example.txt"
+}
+
 variable "file_content" {
   type = string
   default = "Hello World"
