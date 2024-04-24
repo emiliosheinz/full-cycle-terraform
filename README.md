@@ -46,8 +46,8 @@ Variables can be set through several different ways:
 Output values make information about your infrastructure available on the command line, and can expose information for other Terraform configurations to use. Output values are similar to return values in programming languages and can be defined using the `output` keyword.
 
 ```tf
-output "instance_ip_addr" {
-  value = aws_instance.server.private_ip
+output "file_id" {
+  value = resource.local_file.example.id
 }
 ```
 
@@ -66,3 +66,9 @@ data "local_file" "example_content" {
 ```
 
 If you want to learn more about data sources you can refer to https://developer.hashicorp.com/terraform/language/data-sources
+
+## Repository content
+
+The Terraform files provided in this repository enable you to replicate the following architecture on AWS: two subnets, each located in a distinct availability zone, along with a route table and a security group designed for managing both Ingress and Egress traffic.
+
+![Architecture](./docs/images/architecture.png)
