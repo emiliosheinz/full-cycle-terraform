@@ -40,3 +40,15 @@ Variables can be set through several different ways:
 - Using the the `-var` option on the CLI
 - In `.tfvars` files, either specified on the CLI or automatically loaded.
 - As environment variables
+
+## Outputs
+
+Output values make information about your infrastructure available on the command line, and can expose information for other Terraform configurations to use. Output values are similar to return values in programming languages. Outputs can be defines using the `output` keyword and they will be visible after you apply a given configuration.
+
+```tf
+output "instance_ip_addr" {
+  value = aws_instance.server.private_ip
+}
+```
+
+If you want to go deeper into the outputs concept you can refer to https://developer.hashicorp.com/terraform/language/values/outputs

@@ -9,6 +9,10 @@ resource "local_file" "example" {
 
 variable "file_content" {
   type = string
-  # default = "Hello World"
+  default = "Hello World"
   # description = "This is the variable description"
+}
+
+output "file_id" {
+  value = resource.local_file.example.id
 }
