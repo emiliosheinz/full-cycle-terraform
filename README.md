@@ -43,7 +43,7 @@ Variables can be set through several different ways:
 
 ## Outputs
 
-Output values make information about your infrastructure available on the command line, and can expose information for other Terraform configurations to use. Output values are similar to return values in programming languages. Outputs can be defines using the `output` keyword and they will be visible after you apply a given configuration.
+Output values make information about your infrastructure available on the command line, and can expose information for other Terraform configurations to use. Output values are similar to return values in programming languages and can be defined using the `output` keyword.
 
 ```tf
 output "instance_ip_addr" {
