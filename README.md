@@ -72,3 +72,11 @@ If you want to learn more about data sources you can refer to https://developer.
 The Terraform files provided in this repository enable you to replicate the following architecture on AWS: two subnets, each located in a distinct availability zone, along with a route table and a security group designed for managing both Ingress and Egress traffic.
 
 ![Architecture](./docs/images/architecture.png)
+
+## Running locally
+
+1. Create an AWS Account if you don't have one
+1. Create an user with _AdministratorAccess_ permission
+1. Install the aws cli
+1. Run `aws configure`
+1. Provide the public and private access keys
