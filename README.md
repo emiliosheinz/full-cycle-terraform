@@ -80,3 +80,6 @@ The Terraform files provided in this repository enable you to replicate the foll
 1. Install the aws cli
 1. Run `aws configure`
 1. Provide the public and private access keys
+1. Install Terraform
+1. Run `terraform plan`
+1. Run `terraform apply`
